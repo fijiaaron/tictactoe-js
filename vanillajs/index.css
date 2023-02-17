@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    font-family: Montserrat, monospace;
+    font-size: 20px;
+}
+
+.tic-tac-toe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-tac-toe .controls button {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: 1rem solid black;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+
+.tic-tac-toe .board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 20px dashed gray;
+    border-radius: 66px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.tic-tac-toe .board .row {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tic-tac-toe .board .square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: white;
+}
+
+.tic-tac-toe .board .right {
+    margin-right: 0px;
+}
+
+.tic-tac-toe .board .left {
+    margin-left: 0px;
+}
+.tic-tac-toe .board .top > * {
+    margin-top: 0px;
+}
+
+.tic-tac-toe .board .bottom > * {
+    margin-bottom: 0px;
+}
+
+.tic-tac-toe .board .square button {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    border: 0;
+    font-size: 50px;
+}
